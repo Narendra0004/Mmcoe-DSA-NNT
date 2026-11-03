@@ -1,0 +1,33 @@
+Frequently Asked Questions :
+
+
+What is LIFO structure of stack?
+Ans:The elements in Stack are inserted from top and can be removed from top only.Hence element last inserted is removed first.
+How stack is represented ?
+
+Ans:Stack is represented using array or linked list
+
+What are the possible operations with stack?
+
+Ans: 1)PUSH() 2)POP( ) 3)StackEmpty()4)StackFull()
+
+Explain the stack full and stack empty conditions.
+
+Ans: When stack is full top value is equal to max-1 and when it is empty top value is 0
+
+Explain push() functions in C for stack using array. Ans: void push(stack *s,int x)
+{
+
+s->top=s->top+1; s->data[s->top]=x;
+}
+
+6.Explain pop() functions in C for stack using array. Ans: int pop(stack *s)
+{
+
+int x;
+
+x=s->data[s->top]; s->top=s->top-1; return(x);
+}
+
+Explain the concept of double pointer.
+Ans: Double pointer is actually pointer to a pointer . ex.int **p
